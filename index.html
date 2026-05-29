@@ -76,7 +76,7 @@
   /* ── Hero ──────────────────────────────────────────────────── */
   .hero {
     position: relative;
-    padding: clamp(36px, 7vw, 88px) var(--gutter) clamp(28px, 5vw, 60px);
+    padding: clamp(36px, 3vw, 88px) var(--gutter) clamp(28px, 5vw, 60px);
     padding-bottom: 0;
   }
   .hero-meta {
@@ -119,7 +119,7 @@
   }
 
   /* ── Section primitives ────────────────────────────────────── */
-  section { padding: clamp(56px, 9vw, 128px) var(--gutter); }
+  section { padding: clamp(56px, 4.5vw, 128px) var(--gutter); }
   .section-head {
     display: grid;
     grid-template-columns: 140px 1fr;
@@ -199,8 +199,10 @@
 
   /* ── Horizontal image ──────────────────────────────────────── */
   .feature-image {
-    width: 100%;
+    width: 80%;
   aspect-ratio: auto;    
+  border-radius: 20px;
+  margin-left: 10%;
   }
   .feature-caption {
     margin-top: 18px;
@@ -294,7 +296,7 @@
     
   </div>
   <img
-    src="/img/portada.jpg"
+    src="./img/portada.jpg"
     id="hero-image"
     class="hero-image"
     shape="rounded"
@@ -320,7 +322,8 @@
     <div class="video-card">
       <div class="video-container">
         <!-- ── LINK VIDEO UNO ─────────────────────────────────────────────────── -->
-        <iframe src="https://youtube.com/embed/WFqBc-F2X-k?si=uj7UaSV7_BHD1pPH"></iframe>
+        <!--<iframe src="https://youtube.com/embed/WFqBc-F2X-k?si=uj7UaSV7_BHD1pPH"></iframe>-->
+        <video src="./video/Cap_1.mp4" />
       </div>
       <div class="video-meta">
         <h3 class="video-title" contenteditable="true">Capítulo uno</h3>
@@ -371,24 +374,16 @@
       </p>
     </div>
   </div>
- <image-slot
+  <div class="infographic-wrap">
+ <img
    id="feature-image"
   class="feature-image"
   shape="rounded"
   radius="20"
   fit="contain"
-  src="/img/perfil.jpeg"
+  src="./img/perfil.jpeg"
 >
-  <div class="feature-caption">
-    <span contenteditable="true">
-      Pie de foto · descripción de la imagen
-    </span>
-
-    <span contenteditable="true">
-      Crédito / autor
-    </span>
-  </div>
-</image-slot>
+</img></div>
 </section>
 
 <!-- ── INFOGRAFÍA ─────────────────────────────────────────────── -->
@@ -401,13 +396,13 @@
   </div>
 
   <div class="infographic-wrap">
-    <image-slot     id="infographic"
+    <img     id="infographic"
   class="infographic-slot"
   shape="rounded"
   radius="14"
   fit="cover"
-  src="/img/info.jpeg"
-></image-slot>  </div>
+  src="./img/info.jpeg"
+></img>  </div>
 </section>
 <footer data-screen-label="06 Footer">
   <p class="colophon" id="footer-text">Gracias por leer hasta aquí.</p>
