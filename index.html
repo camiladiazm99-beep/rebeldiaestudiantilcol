@@ -200,7 +200,7 @@
   /* ── Horizontal image ──────────────────────────────────────── */
   .feature-image {
     width: 100%;
-    
+  aspect-ratio: auto;    
   }
   .feature-caption {
     margin-top: 18px;
@@ -221,8 +221,8 @@
   }
   .infographic-slot {
     width: 100%;
-    aspect-ratio: 4 / 5;
-  }
+  height: auto;
+  min-height: 400px;  }
 
   /* ── Footer ────────────────────────────────────────────────── */
   footer {
@@ -372,11 +372,12 @@
     </div>
   </div>
  <image-slot
-  id="feature-image"
+   id="feature-image"
   class="feature-image"
   shape="rounded"
   radius="20"
-    src="/img/perfil.jpeg"
+  fit="contain"
+  src="/img/perfil.jpeg"
 >
   <div class="feature-caption">
     <span contenteditable="true">
@@ -400,12 +401,11 @@
   </div>
 
   <div class="infographic-wrap">
-   <image-slot
-  id="infographic"
+    <image-slot     id="infographic"
   class="infographic-slot"
   shape="rounded"
   radius="14"
-  fit="contain"
+  fit="cover"
   src="/img/info.jpeg"
 ></image-slot>  </div>
 </section>
