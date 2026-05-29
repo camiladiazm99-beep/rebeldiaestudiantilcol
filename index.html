@@ -3,7 +3,9 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Proyecto </title>
+<title>Rebeldia Estudiantil Colombia</title>
+<link rel="icon" type="image/png" href="./img/favicon.png" />
+
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -62,7 +64,7 @@
   }
   .topbar .brand { display: flex; align-items: center; gap: 10px; }
   .topbar .brand .dot {
-    width: 8px; height: 8px; border-radius: 50%;
+    width: 15px; height: 15px; border-radius: 50%;
     background: var(--accent);
   }
   .topbar nav { display: flex; gap: 22px; }
@@ -116,10 +118,11 @@
     margin: clamp(28px, 4vw, 56px) var(--gutter) 0;
     width: calc(100% - 2 * var(--gutter));
     margin-top: 0;
+    border-radius: 20px;
   }
 
   /* ── Section primitives ────────────────────────────────────── */
-  section { padding: clamp(56px, 4.5vw, 128px) var(--gutter); }
+  section { padding: clamp(56px, 2vw, 128px) var(--gutter); }
   .section-head {
     display: grid;
     grid-template-columns: 140px 1fr;
@@ -201,9 +204,9 @@
   /* ── Horizontal image ──────────────────────────────────────── */
   .feature-image {
     width: 80%;
-  aspect-ratio: auto;    
-  border-radius: 20px;
-  margin-left: 10%;
+    aspect-ratio: auto;    
+    border-radius: 20px;
+    margin-left: 10%;
   }
   .feature-caption {
     margin-top: 18px;
@@ -225,7 +228,8 @@
   .infographic-slot {
     width: 100%;
   height: auto;
-  min-height: 400px;  }
+  min-height: 400px;
+border-radius: 20px;  }
 
   /* ── Footer ────────────────────────────────────────────────── */
   footer {
@@ -291,8 +295,8 @@
   <div class="hero">
     <div class="hero-meta">
       <span id="hero-cat">Reportaje</span>
-      <span id="hero-date">27 mayo 2026</span>
-      <span id="hero-read">Lectura · 6 min</span>
+      <span id="hero-date">29 mayo 2026</span>
+      <span id="hero-read">Lectura · 18 min</span>
     </div>
     
   </div>
@@ -369,9 +373,6 @@
     <div class="eyebrow">§ 02 · Imagen</div>
     <div>
       <h2 class="section-title" id="image-title">Natalia <em>Moreno</em>.</h2>
-      <p class="section-sub" id="image-sub">
-        Perfil.
-      </p>
     </div>
   </div>
   <div class="infographic-wrap">
